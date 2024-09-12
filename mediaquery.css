@@ -1,5 +1,14 @@
 @media screen and (width < 575px) {
 
+    .navbar{
+        align-items: center;
+    }
+
+    #main{
+        position: relative;
+        top: 70px;
+    }
+
     .home .img img {
         width: 500px;
         height: 300px;
@@ -49,4 +58,11 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+}
+
+@media screen and (width > 575px) {
+    .navbar-nav .nav-link:hover{
+        color: black;
+        font-weight: 600;
+    }   
 }
