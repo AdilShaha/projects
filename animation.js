@@ -42,14 +42,14 @@ loco();
 let tl = gsap.timeline();
 
 tl.from("nav img", {
-  y: 100,
-  duration: 1,
+  y: 50,
+  duration: 0.8,
   opacity: 0,
 });
 
-tl.from(".nav-right ul li", {
+gsap.from(".nav-right ul li", {
   y: 100,
-  duration: 1,
+  duration: 0.8,
   opacity: 0,
   stagger: 0.1,
 });
@@ -57,9 +57,11 @@ tl.from(".nav-right ul li", {
 tl.from(".facilities .facilities-content div", {
   scale: 0,
   opacity: 0,
-  duration: 1,
-  stagger: 0.5,
+  duration: .5,
+  stagger: .1,
   scrollTrigger: {
+    start:"top 80%",
+    end:"top 50%",
     trigger: ".facilities .facilities-content div",
     scroller: "#main",
     scrub: 2,
